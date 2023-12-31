@@ -5,7 +5,7 @@
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
-    "build:github-pages": "BUILD_TARGET=gh-pages astro build",
+    "build:github-pages": "BUILD_TARGET=github-pages astro build",
     "preview": "astro preview",
     "astro": "astro"
   },
