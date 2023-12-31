@@ -51,7 +51,12 @@ export default defineConfig({
 				// 	autogenerate: { directory: 'reference' },
 				// },
 			],
-			customCss: ['./src/tailwind.css'],
+			customCss: [
+				'@fontsource/lato/400.css',
+				'@fontsource/lato/700.css',
+				'@fontsource/lato/900.css',
+				'./src/tailwind.css',
+			],
 		}),
 		tailwind({ applyBaseStyles: false }),
 	],
