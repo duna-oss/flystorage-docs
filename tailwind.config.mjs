@@ -1,4 +1,4 @@
-import colors from 'tailwindcss/colors.js';
+import colors from 'tailwindcss/colors';
 import starlightPlugin from '@astrojs/starlight-tailwind';
 
 // Generated color palettes
