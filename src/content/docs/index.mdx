@@ -27,3 +27,28 @@ hero:
       link: /api/
       icon: open-book
 ---
+
+import { Card, CardGrid } from '@astrojs/starlight/components';
+
+<CardGrid stagger>
+    <Card title="Pick an Adapter" icon="magnifier">
+        Choose one of the various ready-made adapters, such as:
+        [Amazon S3](/adapter/aws-s3), [Google Cloud Storage](/adapter/google-cloud-storage/),
+        or [Azure Storage Blob](/adapter/azure-storage-blob/).
+
+        Didn't find one for your needs? Implement your own [custom adapter](/custom-adapter/).
+    </Card>
+    <Card title="Use the API" icon="pencil">
+        Integrate the promise-based [FileStorage API](/api/) in your Node.js application.
+
+        ```typescript
+        await storage.write(pathToFile, contents);
+        ```
+    </Card>
+    <Card title="Faster tests" icon="rocket">
+        Use the [in-memory](/adapter/in-memory) adapter in your tests to speed them up.
+    </Card>
+    <Card title="Get to know the architecture" icon="open-book">
+        Learn more about the [architecture](/architecture/) in the documentation.
+    </Card>
+</CardGrid>

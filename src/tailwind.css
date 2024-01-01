@@ -4,6 +4,30 @@
 
 :root {
     --sl-nav-gap: 0.5rem;
+    --sl-color-purple: theme(colors.sky.700);
+    --sl-color-purple-low: theme(colors.sky.700);
+    --sl-color-orange: theme(colors.sky.700);
+    --sl-color-orange-low: theme(colors.sky.700);
+    --sl-color-red: theme(colors.sky.700);
+    --sl-color-red-low: theme(colors.sky.700);
+    --sl-color-blue: theme(colors.sky.700);
+    --sl-color-blue-low: theme(colors.sky.700);
+    --sl-color-green: theme(colors.sky.700);
+    --sl-color-green-low: theme(colors.sky.700);
+}
+
+:root[data-theme='light'] {
+
+    --sl-color-purple: theme(colors.sky.100);
+    --sl-color-purple-low: theme(colors.sky.100);
+    --sl-color-orange: theme(colors.sky.100);
+    --sl-color-orange-low: theme(colors.sky.100);
+    --sl-color-red: theme(colors.sky.100);
+    --sl-color-red-low: theme(colors.sky.100);
+    --sl-color-blue: theme(colors.sky.100);
+    --sl-color-blue-low: theme(colors.sky.100);
+    --sl-color-green: theme(colors.sky.100);
+    --sl-color-green-low: theme(colors.sky.100);
 }
 
 /*
