@@ -31,8 +31,8 @@ export default defineConfig({
 					collapsed: false,
 					items: [
 						{ label: 'Setup', link: '/setup/' },
-						{ label: 'Architecture', link: '/architecture/' },
 						{ label: 'FileStorage API', link: '/api/' },
+						{ label: 'Architecture', link: '/architecture/' },
 						{ label: 'Visibility', link: '/visibility/' },
 						{ label: 'Custom Adapter', link: '/custom/' },
 					],
