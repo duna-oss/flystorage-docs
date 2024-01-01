@@ -34,7 +34,7 @@ export default defineConfig({
 						{ label: 'FileStorage API', link: '/api/' },
 						{ label: 'Architecture', link: '/architecture/' },
 						{ label: 'Visibility', link: '/visibility/' },
-						{ label: 'Custom Adapter', link: '/custom/' },
+						{ label: 'Custom Adapter', link: '/custom-adapter/' },
 					],
 				},
 				{
