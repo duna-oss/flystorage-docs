@@ -46,10 +46,6 @@ export default defineConfig({
 					collapsed: false,
 					autogenerate: { directory: 'tools' },
 				},
-				// {
-				// 	label: 'Reference',
-				// 	autogenerate: { directory: 'reference' },
-				// },
 			],
 			customCss: [
 				'@fontsource/lato/400.css',
