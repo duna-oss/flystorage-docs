@@ -41,9 +41,10 @@ import { Card, CardGrid } from '@astrojs/starlight/components';
     <Card title="Use the API" icon="pencil">
         Integrate the promise-based [FileStorage API](/api/) in your Node.js application.
 
-        ```typescript
-        await storage.write(pathToFile, contents);
-        ```
+        [Write](/api/#write-files), [read](/api/#read-files), [list](/api/#list-directory-contents),
+        and [delete](/api/#delete-files)
+        files with ease. Provide secure access to private files using
+        [temporary URL](/api/#temporary-urls).
     </Card>
     <Card title="Faster tests" icon="rocket">
         Use the [in-memory](/adapter/in-memory) adapter in your tests to speed them up.

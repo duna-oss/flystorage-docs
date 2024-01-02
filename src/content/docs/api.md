@@ -33,7 +33,7 @@ try {
      */
     const contents = await storage.read('path/to/file.txt');
 } catch (err) {
-    if (err instanceof UnableToDeleteFile) {
+    if (err instanceof UnableToReadFile) {
         // handle error
     }
 }
