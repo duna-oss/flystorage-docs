@@ -8,7 +8,7 @@ Writing file using the `write` method:
 
 ```typescript
 try {
-    await storage.write('path/to/file.txt', contents, options);
+    await storage.write('path/to/file.txt', contents);
 } catch (err) {
     if (err instanceof UnableToWriteFile) {
         // handle error
@@ -19,6 +19,16 @@ try {
 The `write` method accepts a `string`, `Uint8Array` (or `Buffer`), or any `Readable` stream.
 When writing a file, any of the parent directories are automatically created if the underlying
 storage implementation requires directories to exist.
+
+You can specify visibility of a file when writing it:
+
+```typescript
+import {VISIBILITY} from '@flystorage/file-storage';
+
+await storage.write('path/to/file.txt', contents, {
+    visibility: Visibility.PUBLIC,
+});
+```
 
 ---
 
