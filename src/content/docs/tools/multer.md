@@ -17,6 +17,7 @@ npm install --save @flystorage/file-storage @flystorage/multer-storage
 import {FileStorage} from '@flystorage/file-storage';
 import {FlystorageMulterStorageEngine} from '@flystorage/multer-storage';
 import multer from 'multer';
+import express from 'express';
 
 const adapter = createYourAdapter();
 const fileStorage = new FileStorage(adapter);
@@ -33,4 +34,16 @@ const storage = new FlystorageMulterStorageEngine(
 );
 
 const uploader = multer({storage});
+const app = express();
+
+app.post('/upload/document', uploader.single('document'), , (req, res, next) => {
+  // req.file is the `document` file
+  // req.body will hold the text fields, if there were any
+});
+
+app.listen(3000);
 ```
+
+## Express examples
+
+For more Express examples, read the [multer docs](https://www.npmjs.com/package/multer). 
