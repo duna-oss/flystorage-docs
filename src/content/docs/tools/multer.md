@@ -1,5 +1,5 @@
 ---
-title: Multer Storage
+title: Express / Multer Storage
 ---
 
 The `@flystorage/multer-storage` package provides an storage implementation for multer,
