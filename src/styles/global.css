@@ -1,0 +1,83 @@
+@import 'tailwindcss';
+
+/*@plugin '@astrojs/starlight-tailwind';*/
+
+@theme {
+    --font-*: initial;
+    --font-sans: Lato;
+
+    --color-accent-50: #f0f9ff;
+    --color-accent-100: #e0f2fe;
+    --color-accent-200: #bae6fd;
+    --color-accent-300: #7dd3fc;
+    --color-accent-400: #38bdf8;
+    --color-accent-500: #0ea5e9;
+    --color-accent-600: #0284c7;
+    --color-accent-700: #0369a1;
+    --color-accent-800: #075985;
+    --color-accent-900: #0c4a6e;
+    --color-accent-950: #082f49;
+
+    --color-gray-50: #f9fafb;
+    --color-gray-100: #f3f4f6;
+    --color-gray-200: #e5e7eb;
+    --color-gray-300: #d1d5db;
+    --color-gray-400: #9ca3af;
+    --color-gray-500: #6b7280;
+    --color-gray-600: #4b5563;
+    --color-gray-700: #374151;
+    --color-gray-800: #1f2937;
+    --color-gray-900: #111827;
+    --color-gray-950: #030712;
+}
+
+/*
+  The default border color has changed to `currentcolor` in Tailwind CSS v4,
+  so we've added these compatibility styles to make sure everything still
+  looks the same as it did with Tailwind CSS v3.
+
+  If we ever want to remove these styles, we need to add an explicit border
+  color utility to any element that depends on these defaults.
+*/
+@layer base {
+    *,
+    ::after,
+    ::before,
+    ::backdrop,
+    ::file-selector-button {
+        border-color: var(--color-gray-200, currentcolor);
+    }
+}
+
+:root {
+    --sl-nav-gap: 0.5rem;
+    --sl-color-purple: var(--color-sky-700);
+    --sl-color-purple-low: var(--color-sky-700);
+    --sl-color-orange: var(--color-sky-700);
+    --sl-color-orange-low: var(--color-sky-700);
+    --sl-color-red: var(--color-sky-700);
+    --sl-color-red-low: var(--color-sky-700);
+    --sl-color-blue: var(--color-sky-700);
+    --sl-color-blue-low: var(--color-sky-700);
+    --sl-color-green: var(--color-sky-700);
+    --sl-color-green-low: var(--color-sky-700);
+}
+
+:root[data-theme='light'] {
+
+    --sl-color-purple: var(--color-sky-100);
+    --sl-color-purple-low: var(--color-sky-100);
+    --sl-color-orange: var(--color-sky-100);
+    --sl-color-orange-low: var(--color-sky-100);
+    --sl-color-red: var(--color-sky-100);
+    --sl-color-red-low: var(--color-sky-100);
+    --sl-color-blue: var(--color-sky-100);
+    --sl-color-blue-low: var(--color-sky-100);
+    --sl-color-green: var(--color-sky-100);
+    --sl-color-green-low: var(--color-sky-100);
+}
+
+/*
+Add additional Tailwind styles to this file, for example with @layer:
+https://tailwindcss.com/docs/adding-custom-styles#using-css-and-layer
+*/

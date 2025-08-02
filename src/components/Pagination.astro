@@ -1,8 +1,8 @@
 ---
 import Icon from './Icon.astro';
 
-const { dir, labels, pagination } = Astro.props;
-const { prev, next } = pagination;
+const { dir, labels, page } = Astro.props;
+const { prev, next } = page?.url ?? {};
 const isRtl = dir === 'rtl';
 ---
 
